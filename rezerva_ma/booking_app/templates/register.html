@@ -1,0 +1,16 @@
+{% block content %}
+    <!-- <div class="content-section"> -->
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset>
+                <legend>Join Today</legend>
+                {{ form }}
+            </fieldset>
+            <!-- <div class="form-group"> -->
+                <button type="submit">
+                    submit
+                </button>
+            <!-- </div> -->
+        </form>
+    <!-- </div> -->
+{% endblock content %}
